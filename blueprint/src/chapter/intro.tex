@@ -1,0 +1,39 @@
+\chapter{Introduction}
+\label{chap:intro}
+
+Formalisation of the proof of the 'germs' version of the reconstruction theorem.
+
+Below are some demos of how to refer to Lean definitions/theorems in the blueprint.
+
+\begin{definition}[One]
+\label{one}
+\lean{one}
+\leanok
+
+    one is 1.
+
+\end{definition}
+
+\begin{definition}[Two]
+\label{two}
+\lean{two}
+\leanok
+
+    two is 2.
+
+\end{definition}
+
+\begin{lemma}[One plus one is two]
+\label{one_plus_one_eq_two}
+\lean{one_plus_one_eq_two}
+\uses{one, two}
+\leanok
+
+one + one = two
+
+\end{lemma}
+
+\begin{proof}
+\leanok
+It is obvious.
+\end{proof}
