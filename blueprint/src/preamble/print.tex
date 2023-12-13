@@ -14,3 +14,9 @@
 \newcommand{\proves}[1]{}
 \newcommand{\lean}[1]{}
 \newcommand{\leanok}{}
+
+% Define `ifplastex` so we can have complicated macros for PDF
+% and simplified macros for the website.
+% See http://plastex.github.io/plastex/plastex/sect0006.html
+\newif\ifplastex
+\plastexfalse
