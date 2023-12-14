@@ -1,6 +1,6 @@
-# Reconstruction
+# reconstruction
 
-[![Website](https://img.shields.io/badge/Website-ready-green)](https://hairer.github.io/Reconstruction/) [![Documentation](https://img.shields.io/badge/Documentation-passing-green)](https://hairer.github.io/Reconstruction/docs/) [![Blueprint](https://img.shields.io/badge/Blueprint-WIP-blue)](https://hairer.github.io/Reconstruction/blueprint/)  [![Paper](https://img.shields.io/badge/Paper-WIP-blue)](https://hairer.github.io/Reconstruction/blueprint.pdf) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/hairer/Reconstruction)
+[![Website](https://img.shields.io/badge/Website-ready-green)](https://hairer.github.io/reconstruction/) [![Documentation](https://img.shields.io/badge/Documentation-passing-green)](https://hairer.github.io/reconstruction/docs/) [![Blueprint](https://img.shields.io/badge/Blueprint-WIP-blue)](https://hairer.github.io/reconstruction/blueprint/)  [![Paper](https://img.shields.io/badge/Paper-WIP-blue)](https://hairer.github.io/reconstruction/blueprint.pdf) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/hairer/reconstruction)
 
 Formalisation of the proof of the 'germs' version of the reconstruction theorem.
 
@@ -17,7 +17,17 @@ To build the web version of the blueprint, you need a working LaTeX installation
 Furthermore, you need some packages:
 
 ```
+# On Ubuntu
 sudo apt install graphviz libgraphviz-dev
+# On Mac
+brew install graphviz
+```
+
+For other systems, see [PyGraphviz: Install](https://pygraphviz.github.io/documentation/stable/install.html).
+
+Then, you need to install the Python dependencies:
+
+```
 pip uninstall -y leanblueprint
 pip install -r blueprint/requirements.txt
 ```
